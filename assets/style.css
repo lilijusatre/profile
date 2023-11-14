@@ -58,6 +58,9 @@
  
 
   /* HEADER */
+  main{
+    margin-top: 15rem;
+  }
   #profile {
       display: flex;
       justify-content: center;
