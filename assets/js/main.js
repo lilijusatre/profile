@@ -21,4 +21,16 @@ icons2.forEach((icon)=> {
         // Restauramos la clase o estilo original
         icon.style.color = "black";
       });
-})
+});
+const cards = document.querySelectorAll(".project_card");
+
+cards.forEach((card) => {
+    card.addEventListener('mouseover', () => {
+    // Agregamos una clase o modificamos el estilo directamente
+    card.style.transform = 'scale(1.2)';
+});
+    card.addEventListener('mouseout', () => {
+    // Restauramos la clase o estilo original
+    card.style.transform = 'scale(1)';
+  });
+});
