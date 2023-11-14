@@ -6,6 +6,7 @@
   body {
     font-family: "Poppins", sans-serif;
     margin: 15px;
+    padding-top: 60px;
   }
   
   html {
@@ -24,7 +25,10 @@
     position: fixed;
     width: 100%;
     color: black;
-
+    background-color: white;
+    height: 2rem;
+    z-index: 999;
+    opacity: 70%;
   }
   .menu{
     display: flex;
@@ -70,7 +74,6 @@
     border: 3px solid #2d2e32;
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     height: 20rem;
-    position: relative;
     transition: all 1s ease-in-out;
     width: 25rem;
   }
@@ -229,6 +232,8 @@
       width: 200px;
       flex-wrap: wrap;
       align-items: center;
+      z-index: 1;
+      padding-top: 60px;
       /* background-color: pink; */
     }
     
