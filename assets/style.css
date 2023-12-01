@@ -24,7 +24,7 @@ h3 {
   display: flex;
   justify-content: space-around;
   position: fixed;
-  width: 100%;
+  width: 95%;
   color: black;
   background-color: white;
   height: 4rem;
@@ -54,7 +54,9 @@ h3 {
 }
 .nav-a:hover {
   color: palevioletred;
-  text-decoration: overline;
+}
+.container-fluid {
+  margin-right: 30px;
 }
 /* HEADER */
 main {
