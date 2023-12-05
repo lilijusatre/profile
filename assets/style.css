@@ -12,25 +12,20 @@ body {
 html {
   scroll-behavior: smooth;
 }
+.education_text > p {
+  color: rgb(85, 85, 85);
+  font-weight: 400;
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
 
-p,
 h2,
 h3 {
   color: rgb(85, 85, 85);
   font-weight: 600;
 }
 /* navbar */
-.nav {
-  display: flex;
-  justify-content: space-around;
-  position: fixed;
-  width: 95%;
-  color: black;
-  background-color: white;
-  height: 4rem;
-  z-index: 999;
-  opacity: 70%;
-}
+
 .menu {
   display: flex;
 }
@@ -52,16 +47,17 @@ h3 {
   text-decoration: none;
   font-size: 1.25rem;
 }
-.nav-a:hover {
+.brand {
+  padding-left: 2rem;
+}
+.nav-a:hover,
+.brand:hover {
   color: palevioletred;
 }
 .container-fluid {
   margin-right: 30px;
 }
 /* HEADER */
-main {
-  margin-top: 15rem;
-}
 #profile {
   display: flex;
   justify-content: center;
@@ -83,24 +79,25 @@ main {
 }
 .profile-text {
   text-align: center;
-  height: 4.1875rem;
 }
 .title {
   font-size: 3rem;
+  font-weight: 600;
 }
 .section_text_p2 {
-  font-size: 1.75rem;
+  font-size: 1rem;
   margin: 1rem;
 }
 /* About Me Section */
 .section_container {
   text-align: center;
-  margin-top: 15vh;
+  padding-top: 15vh;
+  height: calc(100vh - 60px);
 }
 .img-text-container {
   display: flex;
   align-items: center;
-  padding: 10%;
+  padding: 5% 10%;
 }
 .text-container {
   padding: 0 10%;
@@ -121,10 +118,6 @@ main {
   -webkit-filter: sepia(0);
   filter: sepia(0);
 }
-.redes {
-  height: 100%;
-}
-
 /* EXPERIENCE */
 .experience_content {
   display: flex;
@@ -138,9 +131,7 @@ main {
   height: 15rem;
   margin: 5%;
 }
-.education_text {
-  margin-top: 3rem;
-}
+
 .education_text:hover {
   font-size: 1.25rem;
 }
@@ -153,7 +144,6 @@ main {
   max-width: 400px;
   margin: 0 2rem;
   height: 50%;
-  padding-top: 1.5rem;
 }
 .icons i {
   /* margin: 1rem; */
@@ -167,6 +157,7 @@ main {
 }
 .project_card {
   height: 100%;
+  padding-top: 1rem;
 }
 .show-project {
   margin: 10%;
@@ -181,7 +172,8 @@ main {
   font-size: 0.75rem;
 }
 .button:hover {
-  background-color: rgb(199, 164, 170);
+  background-color: rgb(202, 171, 176);
+  color: whitesmoke;
 }
 /* CONTACT */
 .contact {
@@ -208,6 +200,7 @@ main {
   justify-content: space-between;
   gap: 36px;
   margin-bottom: 100px;
+  height: 40vh;
 }
 .footer_text {
   opacity: 80%;
@@ -238,7 +231,6 @@ main {
     align-items: center;
     z-index: 1;
     padding-top: 60px;
-    /* background-color: pink; */
   }
 
   input:checked ~ .menu {
@@ -310,9 +302,24 @@ main {
   .education,
   .box {
     width: 90vw;
-    height: 30vh;
+    height: 100%;
+  }
+  .education_text {
+    padding-bottom: 1rem;
   }
   .skills {
     height: 50vh;
+  }
+
+  .icons {
+    height: 90%;
+  }
+
+  .section_container {
+    height: auto;
+  }
+
+  #contact {
+    gap: 20px;
   }
 }
