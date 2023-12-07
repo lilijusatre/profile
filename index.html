@@ -10,6 +10,7 @@
       crossorigin="anonymous"
     />
     <title>Lilia Salazar | Front-End Developer</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/tea.ico" />
     <link rel="stylesheet" href="./assets/style.css" />
     <link
       rel="stylesheet"
@@ -20,7 +21,7 @@
     <header id="lilia">
       <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand brand" href="#profile">lilijusatre.dev</a>
+          <a class="navbar-brand brand" href="#profile">Lili.dev</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -63,7 +64,7 @@
               target="_blank"
               ><i
                 class="contact-icon fa-brands fa-github"
-                style="color: #000000; font-size: 2rem"
+                style="color: #000000; font-size: 3rem"
               ></i
             ></a>
             <a
@@ -72,7 +73,7 @@
               target="_blank"
               ><i
                 class="contact-icon fa-brands fa-linkedin"
-                style="color: #000000; font-size: 2rem"
+                style="color: #000000; font-size: 3rem"
               ></i
             ></a>
           </div>
@@ -110,6 +111,13 @@
               🌟 I'm passionate about learning, adapting, and achieving
               outstanding results.
             </p>
+            <div class="hobbies-div">
+              <p>Hobbies:</p>
+
+              <img src="/assets/img/icons/Cinema Popcorn Icon.png" alt="" />
+              <img src="/assets/img/icons/Pesas Gym Icon (1).png" alt="" />
+              <img src="./assets/img/icons/Music Note Icon.png" alt="" />
+            </div>
           </div>
           <div class="image-me">
             <a href="#" class="column col-xs-6" id="sepia"
@@ -233,12 +241,20 @@
               style="color: #000000"
             ></i
           ></a>
-          <a href="mailto:lilijusatre@gmail.com" target="_blank"
-            ><img
+          <button
+            class="btn-email"
+            id="btn-email"
+            href="mailto:lilijusatre@gmail.com"
+            target="_blank"
+          >
+            <img
+              id="imagen"
               src="./assets/img/icons/email.png"
-              alt="mail icon"
-              style="height: 50px; width: 50px"
-          /></a>
+              alt="Imagen 1"
+              onmouseover="cambiarImagen()"
+              onmouseout="restaurarImagen()"
+            />
+          </button>
           <a href="https://www.linkedin.com/in/lilijusatre/" target="_blank"
             ><i
               class="contact-icon fa-brands fa-linkedin"
@@ -247,6 +263,7 @@
           ></a>
         </div>
       </section>
+      <div id="form"></div>
     </main>
     <footer>
       <p class="footer_text">
@@ -260,5 +277,14 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function cambiarImagen() {
+        document.getElementById("imagen").src =
+          "./assets/img/icons/letterIcon.png";
+      }
+      function restaurarImagen() {
+        document.getElementById("imagen").src = "./assets/img/icons/email.png";
+      }
+    </script>
   </body>
 </html>

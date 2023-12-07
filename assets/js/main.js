@@ -41,3 +41,22 @@ cards.forEach((card) => {
     card.style.transform = "scale(1)";
   });
 });
+const emailButton = document.querySelector("#btn-email");
+const form = document.querySelector("#form");
+emailButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.location.href = "mailto:lilijusatre@gmail.com";
+  // const alertElement = document.createElement("form");
+  // form.insertAdjacentHTML(
+  //   "beforeend",
+  //   `<div class="mb-3">
+  //   <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  //   <input type="email" class="form-control" id="exampleFormControlInput1">
+  // </div>
+  // <div class="mb-3">
+  //   <label for="exampleFormControlTextarea1" class="form-label">Subject</label>
+  //   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  //   <button class="button" type="submit">Send</button>
+  // </div>`
+  // );
+});

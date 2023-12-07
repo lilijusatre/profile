@@ -99,6 +99,9 @@ h3 {
   align-items: center;
   padding: 5% 10%;
 }
+.image-me {
+  height: 80%;
+}
 .text-container {
   padding: 0 10%;
   text-align: justify;
@@ -117,6 +120,11 @@ h3 {
 .column#sepia:hover img {
   -webkit-filter: sepia(0);
   filter: sepia(0);
+}
+.hobbies-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 /* EXPERIENCE */
 .experience_content {
@@ -137,13 +145,15 @@ h3 {
 }
 
 .icons {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   max-width: 400px;
   margin: 0 2rem;
-  height: 50%;
+  /* height: 50%; */
+  align-content: center;
+  align-items: center;
 }
 .icons i {
   /* margin: 1rem; */
@@ -192,7 +202,10 @@ h3 {
   height: 65px;
   margin: 5px;
 }
-
+.btn-email {
+  border: none;
+  background-color: transparent;
+}
 #contact {
   display: flex;
   flex-direction: column;
@@ -201,6 +214,19 @@ h3 {
   gap: 36px;
   margin-bottom: 100px;
   height: 40vh;
+}
+#form {
+  display: none;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+/*.form-control {
+  border: rgb(202, 171, 176) 2px solid;
+} */
+.mb-3 {
+  width: 50%;
 }
 .footer_text {
   opacity: 80%;
@@ -309,6 +335,10 @@ h3 {
   }
   .skills {
     height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   .icons {
@@ -321,5 +351,13 @@ h3 {
 
   #contact {
     gap: 20px;
+  }
+  #imagen {
+    width: 300px;
+    transition: transform 0.5s;
+  }
+
+  #imagen:hover {
+    transform: scale(1.1);
   }
 }
