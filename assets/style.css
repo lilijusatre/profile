@@ -353,7 +353,7 @@ h3 {
     gap: 20px;
   }
   #imagen {
-    width: 300px;
+    width: 100%;
     transition: transform 0.5s;
   }
 
