@@ -185,6 +185,9 @@ h3 {
   background-color: rgb(202, 171, 176);
   color: whitesmoke;
 }
+.quote-img {
+  border-radius: 20px;
+}
 /* CONTACT */
 .contact {
   font-size: 2.5rem;
