@@ -129,15 +129,14 @@ h3 {
 /* EXPERIENCE */
 .experience_content {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .box {
   border: 1px solid #2d2e32;
   border-radius: 2.25rem;
-  width: 25rem;
-  height: 15rem;
-  margin: 5%;
+  width: 45vw;
+  height: 25vh;
 }
 
 .education_text:hover {
@@ -164,10 +163,14 @@ h3 {
 /* PROJECTS */
 .cards {
   display: flex;
+  gap: 7px;
+  max-width: 97vw;
 }
 .project_card {
   height: 100%;
   padding-top: 1rem;
+  border: 1px solid #2d2e32;
+  border-radius: 2.25rem;
 }
 .show-project {
   margin: 10%;
