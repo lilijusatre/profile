@@ -127,10 +127,15 @@ h3 {
   justify-content: space-between;
 }
 /* EXPERIENCE */
+#experience {
+  padding: 25vh 5vw;
+  width: auto;
+}
 .experience_content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
 }
 .box {
   border: 1px solid #2d2e32;
@@ -165,6 +170,7 @@ h3 {
   display: flex;
   gap: 7px;
   max-width: 97vw;
+  justify-content: space-around;
 }
 .project_card {
   height: 100%;
@@ -319,6 +325,7 @@ h3 {
   .column#sepia img {
     display: none;
   }
+
   .experience_content {
     flex-direction: column;
   }
