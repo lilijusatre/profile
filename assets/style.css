@@ -140,7 +140,7 @@ h3 {
 .box {
   border: 1px solid #2d2e32;
   border-radius: 2.25rem;
-  width: 45vw;
+  min-width: 45vw;
   height: 25vh;
 }
 
@@ -152,9 +152,9 @@ h3 {
   font-size: 3.5rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  max-width: 400px;
-  margin: 0 2rem;
+  justify-content: space-between;
+  max-width: 90%;
+  margin: 3rem;
   /* height: 50%; */
   align-content: center;
   align-items: center;
@@ -164,6 +164,9 @@ h3 {
   width: 65px;
   height: 65px;
   margin: 5px;
+}
+.education_text {
+  margin: 3rem;
 }
 /* PROJECTS */
 .cards {
@@ -196,6 +199,7 @@ h3 {
 }
 .quote-img {
   border-radius: 20px;
+  height: 35vh;
 }
 /* CONTACT */
 .contact {
@@ -206,17 +210,21 @@ h3 {
   max-width: 400px;
   margin: 0 2rem;
   height: 50%;
-  padding-top: 1.5rem;
+  /* padding-top: 1.5rem; */
 }
 .contact i,
 .contact-icon {
   width: 65px;
   height: 65px;
-  margin: 5px;
+  margin-top: 25px;
 }
+
 .btn-email {
   border: none;
   background-color: transparent;
+}
+#imagen {
+  width: 55px;
 }
 #contact {
   display: flex;
