@@ -1,35 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lilia Salazar</title>
-</head>
-<body>
-    <header>
-        <div class="heading">
-            <h1 class="fullname">Lilia Salazar Trejo</h1>
-            <p class="headline">Web Developer</p>
-        </div>
-        <div class="important-info">
-            <p>EMAIL <span>lilijusatre@gmail.com</span> </p>
-            <p>PORTFOLIO <span>lilijusatre.dev</span></p>
-        </div>
-    </header>
-    <main>
-        <section class="work-experience">
-            <h2 class="work-experience-title">Work Experience</h2>
-            <div class="items">
-                <div>
-                    <i>icon</i>
-                    <h3> Full Stack Jr <span>company</span></h3>
-                    <p>Sep 2023 -> Dic 2023</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Resume of Lilia Salazar, frontend engineer." />
+    <meta name="theme-color" content="#faf7f4" />
+    <title>Lilia Salazar | Resume</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/tea.ico" />
+    <style>
+      :root { color-scheme: light; --ink: #252a2d; --muted: #626b6c; --accent: #7f3445; --paper: #faf7f4; --line: #e4d9d3; }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.55 Arial, sans-serif; }
+      a { color: var(--accent); text-underline-offset: 0.2em; }
+      a:focus-visible { outline: 3px solid #bc7381; outline-offset: 3px; }
+      .toolbar { display: flex; justify-content: space-between; gap: 1rem; width: min(820px, calc(100% - 2rem)); margin: 1rem auto; }
+      .toolbar a, .toolbar button { border: 1px solid var(--accent); border-radius: 6px; padding: 0.6rem 0.85rem; background: transparent; color: var(--accent); font: inherit; text-decoration: none; cursor: pointer; }
+      .resume { width: min(820px, calc(100% - 2rem)); margin: 0 auto 2rem; padding: clamp(1.4rem, 5vw, 3rem); background: white; box-shadow: 0 12px 40px #252a2d12; }
+      header { padding-bottom: 1.4rem; border-bottom: 2px solid var(--accent); }
+      h1, h2, h3, p { margin-top: 0; }
+      h1 { margin-bottom: 0.2rem; font-size: clamp(2rem, 6vw, 2.8rem); letter-spacing: -0.05em; }
+      .headline { margin-bottom: 0.9rem; color: var(--accent); font-size: 1.15rem; font-weight: 700; }
+      .contact { display: flex; flex-wrap: wrap; gap: 0.35rem 1rem; margin: 0; color: var(--muted); font-size: 0.92rem; }
+      .summary { margin: 1.2rem 0 0; }
+      section { padding-top: 1.15rem; }
+      h2 { margin-bottom: 0.7rem; color: var(--accent); font-size: 0.96rem; letter-spacing: 0.11em; text-transform: uppercase; }
+      .role { margin-bottom: 0.95rem; break-inside: avoid; }
+      h3 { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.25rem 1rem; margin-bottom: 0.1rem; font-size: 1rem; }
+      .meta { margin-bottom: 0.35rem; color: var(--muted); font-size: 0.9rem; }
+      ul { margin: 0.35rem 0 0; padding-left: 1.2rem; }
+      li + li { margin-top: 0.18rem; }
+      .skills p { margin-bottom: 0.35rem; }
+      .skills strong { color: var(--ink); }
+      .education p { margin-bottom: 0.45rem; }
+      @media (max-width: 520px) { .toolbar { flex-direction: column; } .toolbar a, .toolbar button { text-align: center; } }
+      @media print {
+        @page { size: letter; margin: 0.55in; }
+        body { background: white; font-size: 10pt; line-height: 1.4; }
+        .toolbar { display: none; }
+        .resume { width: auto; margin: 0; padding: 0; box-shadow: none; }
+        section { padding-top: 0.75rem; }
+        a { color: inherit; text-decoration: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="toolbar" aria-label="Resume actions">
+      <a href="./index.html">← Back to portfolio</a>
+      <button type="button" onclick="window.print()">Print or save as PDF</button>
+    </nav>
+    <main class="resume">
+      <header>
+        <h1>Lilia Salazar</h1>
+        <p class="headline">Frontend Engineer · Angular, React, Next.js &amp; TypeScript</p>
+        <p class="contact">
+          <a href="mailto:lilijusatre@gmail.com">lilijusatre@gmail.com</a>
+          <a href="https://lilijusatre.github.io/profile/">Portfolio</a>
+          <a href="https://www.linkedin.com/in/lilijusatre/">LinkedIn</a>
+          <a href="https://github.com/lilijusatre">GitHub</a>
+        </p>
+        <p class="summary">Frontend engineer building web applications, dashboards, onboarding flows, and marketing pages. Experienced in role-based agency workflows and interfaces for employers and applicants, with additional contributions to backend tasks, databases, and scripts.</p>
+      </header>
 
-                </div>
-                <p>Descripcion</p>
-            </div>
+      <section aria-labelledby="experience-title">
+        <h2 id="experience-title">Experience</h2>
+        <article class="role">
+          <h3><span>Espiralapp · Frontend Engineer</span><span>Oct 2025 – Present</span></h3>
+          <p class="meta">Full-time</p>
+          <ul>
+            <li>Redesign the web application dashboard and develop user onboarding flows.</li>
+            <li>Build responsive marketing landing pages with animation.</li>
+            <li>Develop frontend features with Angular, Next.js, TypeScript, JavaScript, and React; contribute to backend and database tasks.</li>
+          </ul>
+        </article>
+        <article class="role">
+          <h3><span>LIV · Frontend Engineer</span><span>May 2025 – Present</span></h3>
+          <p class="meta">Part-time contractor</p>
+          <ul>
+            <li>Implemented an agency management section with role-based permissions and administrative visibility across agency operations.</li>
+            <li>Contributed to Empli, an employment profile analysis platform with an employer dashboard and a separate applicant application.</li>
+          </ul>
+        </article>
+        <article class="role">
+          <h3><span>VIVE Properties · Web Developer</span><span>Feb 2024 – Mar 2025</span></h3>
+          <ul>
+            <li>Built web features and a chatbot using JavaScript, Node.js, SQL, and TypeScript.</li>
+            <li>Worked on WhatsApp integrations and webhooks.</li>
+          </ul>
+        </article>
+        <article class="role">
+          <h3><span>Freelance · Software Engineer</span><span>Apr 2024 – Jun 2024</span></h3>
+          <ul><li>Redesigned and built a client landing page with React and TypeScript.</li></ul>
+        </article>
+      </section>
 
-        </section>
+      <section class="skills" aria-labelledby="skills-title">
+        <h2 id="skills-title">Technical skills</h2>
+        <p><strong>Frontend:</strong> Angular, React, Next.js, TypeScript, JavaScript, HTML5, CSS3, Sass, Styled Components</p>
+        <p><strong>Backend &amp; tools:</strong> Node.js, SQL, Java, Bash, Git, webhooks, WhatsApp SDK, Velo by Wix</p>
+      </section>
+
+      <section class="education" aria-labelledby="education-title">
+        <h2 id="education-title">Education &amp; certifications</h2>
+        <p><strong>Computer Systems Engineering</strong> · UTEL · Expected Dec 2026</p>
+        <p><strong>Java Full Stack Developer</strong> · Generation México · 2023</p>
+        <p><strong>Physical Therapy</strong> · Universidad del Valle de México · 2015–2019</p>
+        <p><strong>freeCodeCamp:</strong> <a href="https://www.freecodecamp.org/certification/lilijusatre/javascript-algorithms-and-data-structures">JavaScript Algorithms and Data Structures</a> · <a href="https://www.freecodecamp.org/certification/lilijusatre/responsive-web-design">Responsive Web Design</a></p>
+      </section>
     </main>
-</body>
+  </body>
 </html>
